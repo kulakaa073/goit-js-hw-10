@@ -24,15 +24,77 @@ input[name='delay'] {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 4%;
+  color: #2e2f42;
   padding: 8px 16px;
   margin-bottom: 16px;
+  outline: none;
+  box-shadow: none;
+}
+
+input[name='delay']:hover {
+  border: 1px solid #000000;
+}
+
+input[name='delay']:active,
+input[name='delay']:focus {
+  border: 1px solid #4e75ff;
 }
 
 fieldset {
-  max-width: 360px;
+  width: 360px;
+  height: 78px;
   border: 1px solid #808080;
   border-radius: 4px;
   padding: 24px 48px 8px;
   display: flex;
   align-items: center;
+  gap: 48px;
+  margin-bottom: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+
+fieldset:hover {
+  border: 1px solid #000000;
+}
+
+fieldset label {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #2e2f42;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+fieldset input[type='radio'] {
+  width: 20px;
+  height: 20px;
+}
+
+button[type='submit'] {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button[type='submit']:hover {
+  background-color: #6c8cff;
 }
